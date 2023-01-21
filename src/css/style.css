@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main .rating {
+  background: linear-gradient(hsl(213deg, 19%, 18%), hsl(216deg, 12%, 10%));
+  max-width: 375px;
+  width: 90%;
+  padding: 2.6em;
+  border-radius: 1em;
+}
+main .rating img {
+  background-color: hsl(213deg, 19%, 23%);
+  padding: 0.8em;
+  border-radius: 100%;
+}
+main .rating h1 {
+  font-size: 2.2rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  margin: 1.2rem 0;
+}
+main .rating p {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+main .rating div {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+main .rating div button {
+  border: none;
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+main .rating div button:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .rating div button.active {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .rating button {
+  width: 100%;
+  border: none;
+  background-color: hsl(25deg, 97%, 53%);
+  border-radius: 3rem;
+  padding: 1.4rem 0;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .rating button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+main .thank {
+  display: none;
+  background: linear-gradient(hsl(213deg, 19%, 18%), hsl(216deg, 12%, 10%));
+  max-width: 375px;
+  width: 90%;
+  padding: 2.6em;
+  border-radius: 1em;
+  text-align: center;
+}
+main .thank img {
+  width: 50%;
+}
+main .thank :nth-child(2) {
+  margin: 1em auto;
+  width: 70%;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 3rem;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: hsl(25deg, 97%, 53%);
+  font-weight: bold;
+}
+main .thank h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2.8rem;
+  margin: 2rem 0;
+}
+main .thank :nth-child(4) {
+  font-size: 1.4rem;
+  color: hsl(216deg, 12%, 54%);
+  line-height: 2.2rem;
+}/*# sourceMappingURL=style.css.map */

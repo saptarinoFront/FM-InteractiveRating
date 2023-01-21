@@ -1,0 +1,133 @@
+// Variable
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+$mobile: 375px;
+$desktop: 1440px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+body {
+    background-color: $veryDarkBlue;
+    height: 100vh;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .rating {
+        background: linear-gradient($darkBlue, hsl(216, 12%, 10%));
+        max-width: $mobile;
+        width: 90%;
+        padding: 2.6em;
+        border-radius: 1em;
+        img {
+            background-color: hsl(213, 19%, 23%);
+            padding: 0.8em;
+            border-radius: 100%;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: $white;
+            font-weight: 700;
+            margin: 1.2rem 0;
+        }
+        p {
+            color: $lightGrey;
+            font-size: 1.5rem;
+            line-height: 2.6rem;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin: 2em 0;
+            button {
+                border: none;
+                height: 3em;
+                width: 3em;
+                border-radius: 100%;
+                background-color: $darkBlue;
+                color: $mediumGrey;
+                font-weight: 700;
+                font-size: 1.5em;
+                &:hover {
+                    background-color: $lightGrey;
+                    color: $white;
+                }
+                &.active {
+                    background-color: $orange;
+                    color: $white;
+                }
+            }
+        }
+        button {
+            width: 100%;
+            border: none;
+            background-color: $orange;
+            border-radius: 3rem;
+            padding: 1.4rem 0;
+            color: $white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover {
+                background-color: $white;
+                color: $orange;
+            }
+        }
+    }
+    .thank {
+        display: none;
+        background: linear-gradient($darkBlue, hsl(216, 12%, 10%));
+        max-width: $mobile;
+        width: 90%;
+        padding: 2.6em;
+        border-radius: 1em;
+        text-align: center;
+        img {
+            width: 50%;
+        }
+        :nth-child(2) {
+            margin: 1em auto;
+            width: 70%;
+            background-color: $darkBlue;
+            border-radius: 3rem;
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            color: $orange;
+            font-weight: bold;
+        }
+        h1 {
+            color: $white;
+            font-size: 2.8rem;
+            margin: 2rem 0;
+        }
+        :nth-child(4) {
+            font-size: 1.4rem;
+            color: $mediumGrey;
+            line-height: 2.2rem;
+        }
+    }
+}

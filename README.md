@@ -2,11 +2,12 @@
 
 ### Screenshot
 
-![](./images/Screenshot.png)
+![](./images/Screenshot1.png)
+![](./images/Screenshot2.png)
 
 ### Links
 
--   Live Site URL: [Live Demo](https://saptarinofront.github.io/FM-ProductPreview/)
+-   Live Site URL: [Live Demo](https://saptarinofront.github.io/FM-InteractiveRating/)
 
 ## My process
 
@@ -14,6 +15,7 @@
 
 -   HTML5
 -   CSS With SASS
+-   Javascript
 -   Mobile-first workflow
 
 ## Author
